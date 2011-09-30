@@ -10,6 +10,10 @@ $bot = Cinch::Bot.new do
     c.realname = 'The Kitty Bot, of course!'
     c.channels = ['#kittybot']
   end
+  
+  on :message, "!pokekittybot" do |m|
+    m.reply "Ouch!"
+  end
 end
 
 $bot.start
